@@ -1,0 +1,15 @@
+<%= form_with(model:@user) do |f| %>
+  <%= f.label :username, 'Enter your name' %>
+  <%= f.text_field :username, autocomplete: 'off' %>
+  <br>
+  <%= f.label :email, 'Enter your email' %>
+  <%= f.text_field :email, autocomplete: 'off' %>
+  <br>
+  <%= f.label :password, 'Enter your password' %>
+  <%= f.text_field :password, autocomplete: 'off' %>
+  <br>
+  <%= f.label :age, 'Enter your age' %>
+  <%= f.text_field :age, autocomplete: 'off' %>
+  <br>
+  <%= f.submit 'SignUp' %>
+<% end %>
